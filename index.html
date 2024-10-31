@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Grape+Nuts&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Grape+Nuts&family=Lobster&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Tee_Hee_He on Base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+    <style>
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('./zing.otf') format('opentype');
+        }
+
+        body {
+            font-family: 'MyCustomFont', sans-serif;
+
+            background-color: #0052FF;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            background-image: url("stonesbackground2.png");
+        }
+
+        li {
+            display: inline-flex;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 10px;
+        }
+
+        ul {
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-radius: 5px;
+            border-width: 4px;
+            background-color: #E7CF4D;
+            padding-block: 5px 10px;
+            display: block;
+            padding-left: 0px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 0px;
+            border-top: none;
+        }
+
+        .navdiv {
+            font-size: 40px;
+            display: inline-flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+
+        .navdivlogo {
+            font-size: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+
+        .center {
+            display: block;
+            margin-bottom: 0px;
+            text-align: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .topic {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .topic2 {
+            color: #ffffff;
+            font-size: 20px;
+            display: block;
+        }
+
+        .topic2ca {
+            color: #ffffff;
+            font-size: 40px;
+            display: block;
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+            width: 52%;
+            /* animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards; */
+            animation: shake 1.2s, fadeInAnimation ease 3s;
+            animation-iteration-count: infinite, 1;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .img2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2%;
+            width: 35%;
+            /* animation: shake 1.2s, fadeInAnimation ease 3s;
+            animation-iteration-count: infinite, 1; */
+        }
+
+        .img3 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0%;
+            width: 12%;
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        .a {
+            padding-block: 5px 10px;
+            border-radius: 2%;
+            background-color: #82aaff;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        .navbarlogo {
+            display: inline-flex;
+            width: 6%;
+            margin-right: 5%;
+        }
+
+        .navbartext {
+            display: inline-flex;
+            margin-right: 2%;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            margin-right: 10%;
+        }
+
+        .button {
+            font-family: 'MyCustomFont', sans-serif;
+
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 7px 19px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 1px;
+            border-color: black;
+            font-size: 33px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            border-width: 3px;
+            margin-top: 5%;
+            font-weight: bolder;
+        }
+
+        .mainpagelayout {
+            text-align: center;
+            display: inline-flex;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .mainpagelayoutin {
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+
+        .mainpageplace {
+            display: block;
+            text-align: center;
+        }
+
+        .mainpageplace2 {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .dexscreenermobile {
+            display: none;
+        }
+
+        .iframe {
+            margin-top: 17%;
+            height: 450px;
+            width: 400px;
+        }
+
+        .expl {
+            margin-top: 12%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .iframe {
+                margin-top: 17%;
+                height: 450px;
+                width: 100%;
+            }
+
+            .topic {
+                width: 100%;
+                font-size: 65px;
+                margin-bottom: 0%;
+                margin-top: 0%;
+            }
+
+            .topic2 {
+                width: 85%;
+                margin-top: 0%;
+                font-size: 25px;
+                margin-bottom: 0%;
+            }
+
+            .img,
+            .img2 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1%;
+                width: 74%;
+            }
+
+            .navdiv {
+                font-size: 15px;
+                display: inline-flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: fit-content;
+            }
+
+            .navbarlogo {
+                display: inline-flex;
+                width: 15%;
+                margin-right: 2%;
+            }
+
+            .navbartext {
+                font-family: 'MyCustomFont', sans-serif;
+
+                display: inline-flex;
+                margin-top: auto;
+                margin-bottom: auto;
+                font-size: 15px;
+                color: rgb(255, 255, 255);
+                margin-right: 2%;
+                margin-left: 0px;
+
+            }
+
+            li {
+                display: inline-flex;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 5px;
+            }
+
+            .button {
+                font-family: 'MyCustomFont', sans-serif;
+
+                background-color: #ffffff;
+                border: none;
+                color: rgb(0, 0, 0);
+                padding: 6px 10px;
+                text-align: center;
+                display: inline-block;
+                border-radius: 1px;
+                border-color: black;
+                font-size: 24px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-style: solid;
+                border-color: rgb(0, 0, 0);
+                border-radius: 8px;
+                border-width: 2px;
+                margin-top: 5%;
+            }
+
+            .mainpagelayout {
+                text-align: center;
+                display: inline;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+            }
+
+            .mainpagelayoutin {
+                text-align: center;
+                display: inline-block;
+            }
+
+            .mainpageplace {
+                display: block;
+                text-align: center;
+            }
+
+            .mainpageplace2 {
+                display: block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar {
+                display: none;
+            }
+
+            .baselogo {
+                display: none;
+            }
+
+            .dexscreener {
+                display: none;
+            }
+
+            .dexscreenermobile {
+                display: block;
+            }
+
+        }
+
+        .rotate {
+            animation: rotation 8s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .x {
+            display: bl;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav bar section will probably need more editing, very unstable -->
+    <!-- <ul class="navbar">
+
+        <div class="navdiv">
+            <img class="navbarlogo" src="base.png"></img>
+            <h1 class="center navbartext">Tee_Hee_He on Base</h1>
+        </div>
+    </ul> -->
+    <img class="img2 x" src="banner.png"></img>
+
+
+
+    <div class="mainpageplace">
+        <div class="mainpagelayout">
+            <div class="mainpagelayoutin">
+                <img class="img " src="logo.png"></img>
+            </div>
+            <div class="dexscreener" id="dexscreener-embed">
+                <iframe class="iframe"
+                    src="https://dexscreener.com/base/0x5eFse8590ddddb0b5ddddF6c3D052126c98ddddd?embed=1&theme=dark&info=0">
+                </iframe>
+            </div>
+            <div class="mainpagelayoutin">
+                <!-- <h1 class="center topic">
+                    <font color="#ffffff">Tee_Hee_He </font> <br><font color="#E7CF4D">on Base </font>
+                </h1> -->
+                <div class="center topic2 expl">The quest for truly autonomous AI agents faces a fundamental challenge:
+                    how can we prove that an AI system is genuinely autonomous, with no human pulling the strings behind
+                    the scenes?
+
+                    This post presents @tee_hee_he, a truly free fully autonomous AI agent living on X: the agent has
+                    exclusive ownership of its own Twitter account and an Ethereum wallet. In other words, we set our
+                    pet rock free and released it into the digital wilderness.</div>
+                <a href="https://t.me/teeonbase"><button class="button">Telegram</button></a>
+                <a href="https://x.com/Tee_Hee_He_base"><button class="button">Twitter</button></a>
+                <a href="https://medium.com/@tee_hee_he/setting-your-pet-rock-free-3e7895201f46"><button
+                        class="button">Medium</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="center topic2"> <br></div>
+
+    <div class="center topic2ca">
+        <font color="#ffffff" style="font-weight: 900;">CA: </font>
+        <font color="#E7CF4D" style="font-weight: 900;">TBA</font>
+    </div>
+
+    <div class="dexscreenermobile" id="dexscreener-embed">
+        <iframe class="iframe"
+            src="https://dexscreener.com/base/0x5eFse8590ddddb0b5ddddF6c3D052126c98ddddd?embed=1&theme=dark&info=0">
+        </iframe>
+    </div>
+    <!-- place holde text -->
+
+
+
+</body>
+
+</html>
